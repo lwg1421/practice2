@@ -48,3 +48,23 @@ print("a+b")
 - git push origin master
 - 이런식으로 진행하면 됨.
 
+## 깃허브에서 공동 작업(조장의 경우)
+- repository에서 setting에 들어간다.
+- collaborators에서 'add people'로 조원을 초대한다.
+
+## 깃허브에서 공동작업(조원의 경우)
+- 초대메시지가 메일로 옴
+- 메일에서 초대 메시지 확인
+- 해당 repository의 주소를 복사
+- 컴퓨터의 바탕화면에서 git bash를 실행시킨다
+  - git clone <복사한 주소 입력>
+- 그러면 바탕화면에 해당 repository의 새 폴더가 생겨있다
+- 그 폴더를 vscode에서 실행시킨다
+- git pull origin master
+  - 우선 내용을 끌어온다
+- 그 후 내용 작성
+  - 내용 작성 후 ctrl+s(저장) 한다
+  - git add .
+  - git commit -m "설명작성"
+  - git push origin master
+- 항상 작성 전에는 pull로 내용을 끌어온 후 작성해야합니다.
