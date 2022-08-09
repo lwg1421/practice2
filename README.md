@@ -27,5 +27,24 @@ print("a+b")
   - 두번 이상 입력하게되면 절대 안됨
 - 저장 후 터미널에서 git add .
 - git commit -m "설명작성"
-- 
+- 중간중간 git log로 저장 기록 확인 가능
+- 중간중간 git status로 상태 확인 가능
+- git remote add <이름설정> <repository주소 복사>
+  - 이름 설정에는 이름 지정하면 됨. ex)origin
+  - 주소에는 github의 해당 repository 주소 복사해서 붙여넣기
+- git remote -v
+  - remote가 잘 되었는지 확인이 가능 
+- git push <설정한 이름> master
+  - 설정한 이름에는 위에서 설정한 이름 적으면 됨
+  - ex) git push origin master
+  - 이렇게 하면 깃허브상에 깃에서 작성한 내용이 업로드됨.
+
+## 깃허브에서 내용 작성 후
+- 추가적으로 깃허브상에서 내용을 작성한 후에는
+- vscode에서 git pull origin master로 끌어온 후 내용을 작성해야 오류가 나지 않음.
+- 그 후 vscode에서 내용 작성 후 저장
+- git add .
+- git commit -m "설명"
+- git push origin master
+- 이런식으로 진행하면 됨.
 
